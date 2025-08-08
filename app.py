@@ -6,7 +6,7 @@ import plotly.express as px
 import pandas as pd
 
 # --- Carga y Preparación de Datos ---
-DATA_PATH = 'data/precios_consumidor_limpio_2020-2025.csv'
+DATA_PATH = 'data/precios_limpio.parquet'
 try:
     df = pd.read_csv(DATA_PATH)
 except FileNotFoundError:
