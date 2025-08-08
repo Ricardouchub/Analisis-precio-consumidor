@@ -8,7 +8,7 @@ import pandas as pd
 # --- Carga y Preparación de Datos ---
 DATA_PATH = 'data/precios_limpio.parquet'
 try:
-    df = pd.read_csv(DATA_PATH)
+    df = pd.read_parquet(DATA_PATH)
 except FileNotFoundError:
     print(f"Error: No se encontró el archivo en la ruta '{DATA_PATH}'.")
     print("Asegúrate de que el archivo CSV limpio esté en la carpeta 'data'.")
