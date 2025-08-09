@@ -1,4 +1,4 @@
-# Analisis de precios al consumidor en Chile con Dashboard (2020-2025)
+# Analisis de precios de la canasta básica al consumidor en Chile con Dashboard (2020-2025)
 
 <p align="left">
   <img src="https://img.shields.io/badge/Proyecto_Completado-%E2%9C%94-2ECC71?style=flat-square&logo=checkmarx&logoColor=white" alt="Proyecto Completado"/>
