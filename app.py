@@ -31,9 +31,6 @@ CONTENT_STYLE = {"margin-left": "24rem", "margin-right": "2rem", "padding": "2re
 # --- Layout de la App ---
 app.layout = html.Div([
     html.Div([
-        html.H3("El Pulso de los Precios", className="fw-bold"),
-        html.P("Chile 2020-2025", className="text-muted"),
-        html.Hr(),
         html.P("Filtra los datos para explorar:", className="lead"),
         dbc.Label("Rango de Años:"),
         dcc.RangeSlider(id='filtro-anio', min=df['anio'].min(), max=df['anio'].max(), step=1, value=[df['anio'].min(), df['anio'].max()], marks={str(year): str(year) for year in df['anio'].unique()}, tooltip={"placement": "bottom", "always_visible": True}),
@@ -49,7 +46,7 @@ app.layout = html.Div([
     
     html.Div(id="page-content", style=CONTENT_STYLE, children=[
         html.Div([
-            html.H4("Visualizador de la Canasta Básica", className="fw-bold"),
+            html.H4("Visualizador de precios al consumidor (Chile 2020-2025)", className="fw-bold"),
             dcc.Markdown(
                 """
                 Este dashboard interactivo presenta un análisis de más de 1.8 millones de registros de precios al consumidor, capturados por la **Oficina de Estudios y Políticas Agrarias (ODEPA)** entre 2020 y 2025. 
