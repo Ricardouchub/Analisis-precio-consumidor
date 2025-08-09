@@ -1,11 +1,11 @@
-# --- Importar Librerías ---
+# Importar Librerías 
 import dash
 import dash_bootstrap_components as dbc
 from dash import dcc, html, Input, Output, State
 import plotly.express as px
 import pandas as pd
 
-# --- Carga y Preparación de Datos ---
+# Carga y Preparación de Datos 
 DATA_PATH = 'data/precios_limpio.parquet'
 try:
     df = pd.read_parquet(DATA_PATH)
@@ -20,15 +20,15 @@ df['anio_mes'] = df['anio'].astype(str) + '-' + df['mes'].astype(str).str.zfill(
 ALL_REGIONS = sorted(df['region'].unique())
 ALL_CANALES = sorted(df['tipo_de_punto_monitoreo'].unique())
 
-# --- Inicialización de la App Dash ---
+# Inicialización de la App Dash 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.FLATLY, dbc.icons.BOOTSTRAP])
 server = app.server
 
-# --- Estilos ---
+# Estilos 
 SIDEBAR_STYLE = {"position": "fixed", "top": 0, "left": 0, "bottom": 0, "width": "22rem", "padding": "2rem 1rem", "background-color": "#f8f9fa", "overflow-y": "auto"}
 CONTENT_STYLE = {"margin-left": "24rem", "margin-right": "2rem", "padding": "2rem 1rem"}
 
-# --- Layout de la App ---
+# Layout de la App 
 app.layout = html.Div([
     html.Div([
         html.P("Filtra los datos para explorar:", className="lead"),
@@ -82,7 +82,7 @@ app.layout = html.Div([
     ])
 ])
 
-# --- Callbacks ---
+# Callbacks 
 @app.callback(
     Output('filtro-producto', 'options'),
     Output('filtro-producto', 'value'),
@@ -108,7 +108,7 @@ def seleccionar_todas_regiones(n_clicks, valores_actuales):
 @app.callback(
     Output('grafico-evolucion-precio', 'figure'),
     Output('grafico-comparativa-regional', 'figure'),
-    Output('grafico-distribucion-canal', 'figure'), # Output actualizado
+    Output('grafico-distribucion-canal', 'figure'),
     Input('filtro-anio', 'value'),
     Input('filtro-region', 'value'),
     Input('filtro-canal', 'value'),
@@ -130,7 +130,7 @@ def actualizar_dashboard(anios, regiones, canales, productos):
         empty_fig = {"layout": {"annotations": [{"text": "No hay datos para esta selección.", "xref": "paper", "yref": "paper", "showarrow": False, "font": {"size": 16}}]}}
         return empty_fig, empty_fig, empty_fig
 
-    # --- Lógica de Gráficos ---
+    # Lógica de Gráficos 
     
     # Gráfico de Líneas
     df_temporal = dff.groupby(['anio_mes', 'producto'])['precio_promedio'].mean().reset_index().sort_values('anio_mes')
@@ -144,7 +144,7 @@ def actualizar_dashboard(anios, regiones, canales, productos):
     fig_regional = px.bar(df_regional.sort_values('diferencia_%', ascending=False), x='region', y='diferencia_%', title='Diferencia vs. Promedio Nacional por Región', labels={'region': '', 'diferencia_%': 'Diferencia (%)'}, height=400, color='diferencia_%', color_continuous_scale='RdBu_r')
     fig_regional.update_layout(plot_bgcolor="white", xaxis_tickangle=-45, coloraxis_showscale=False)
     
-    # --- GRÁFICO DE TORTA (PIE CHART) ---
+    # Gráfico de Pie Chart
     # Contamos la cantidad de registros por canal de venta
     df_canal_dist = dff['tipo_de_punto_monitoreo'].value_counts().reset_index()
     fig_torta = px.pie(
@@ -159,6 +159,6 @@ def actualizar_dashboard(anios, regiones, canales, productos):
 
     return fig_linea, fig_regional, fig_torta
 
-# --- Ejecutar el Servidor ---
+# Ejecutar el Servidor
 if __name__ == '__main__':
     app.run(debug=True)
