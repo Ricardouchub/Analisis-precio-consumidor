@@ -1,5 +1,14 @@
 # Analisis de precios al consumidor en Chile con Dashboard (2020-2025)
 
+<p align="left">
+  <img src="https://img.shields.io/badge/Proyecto_Completado-%E2%9C%94-2ECC71?style=flat-square&logo=checkmarx&logoColor=white" alt="Proyecto Completado"/>
+  <img src="https://img.shields.io/badge/Python-3.9%2B-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/Pandas-Análisis_de_Datos-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas"/>
+  <img src="https://img.shields.io/badge/Seaborn-Visualización-4E8CA0?style=flat-square&logo=seaborn&logoColor=white" alt="Seaborn"/>
+  <img src="https://img.shields.io/badge/Dash-App-008DE4?style=flat-square&logo=plotly&logoColor=white" alt="Dash"/>
+</p>
+
+
 Este repositorio contiene el código y los datos para un dashboard interactivo que analiza los precios de la canasta básica en Chile. El proyecto utiliza un conjunto de datos públicos de la **Oficina de Estudios y Políticas Agrarias (ODEPA)**, que comprende más de 1.8 millones de registros recopilados entre 2020 y 2025.
 
 <img width="744" height="339" alt="image" src="https://github.com/user-attachments/assets/2ccc3da9-cec2-4208-bfd1-c5a7719d5a5d" />
