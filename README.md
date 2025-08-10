@@ -20,8 +20,6 @@ El objetivo principal de este proyecto es transformar un gran volumen de datos t
 ---
 ## Procesamiento de Datos y Análisis
 
-Antes del desarrollo del dashboard, se realizó un riguroso proceso de preparación y análisis de los datos.
-
 ### **1. Limpieza y Consolidación de Datos**
 El proceso inicial se centró en unificar y estandarizar los 6 archivos CSV originales:
 * **Consolidación:** Se combinaron todos los archivos en un único DataFrame de más de 1.8 millones de filas.
@@ -47,7 +45,6 @@ Debido al gran tamaño del dataset, el archivo CSV final fue convertido a format
 * **Análisis Comparativo:** Dos gráficos resumen la información de la selección:
     * **Comparativa Regional:** Muestra qué regiones son más caras o baratas en comparación con el promedio nacional.
     * **Distribución por Canal:** Un gráfico de torta revela la proporción de datos registrados en cada punto de monitoreo.
-* **Interfaz Limpia:** Desarrollado con un diseño claro y profesional para una experiencia de usuario amigable.
 
 ---
 ## Ejecución Local
