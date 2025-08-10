@@ -47,7 +47,7 @@ Debido al gran tamaño del dataset, el archivo CSV final fue convertido a format
     * **Distribución por Canal:** Un gráfico de torta revela la proporción de datos registrados en cada punto de monitoreo.
 
 ---
-## Ejecución Local
+## Como ejecutarlo localmente
 
 Para ejecutar este dashboard en tu propia máquina, sigue estos pasos:
 
@@ -91,5 +91,9 @@ Los datos utilizados en este proyecto son de dominio público y fueron obtenidos
 <img width="894" height="472" alt="image" src="https://github.com/user-attachments/assets/d7f2f0b2-9b99-4c83-b846-720f2b559589" />
 <img width="879" height="586" alt="image" src="https://github.com/user-attachments/assets/87b470a5-17a4-4857-954d-aee753563dea" />
 
+---
+## Autor
 
+**Ricardo Urdaneta** 
 
+[**LinkedIn**](https://www.linkedin.com/in/ricardourdanetacastro)
