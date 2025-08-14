@@ -46,7 +46,7 @@ app.layout = html.Div([
     
     html.Div(id="page-content", style=CONTENT_STYLE, children=[
         html.Div([
-            html.H4("Visualizador de precios al consumidor (Chile 2020-2025)", className="fw-bold"),
+            html.H4("Visualizador de precios de la canasta básica al consumidor en Chile (2020-2025)", className="fw-bold"),
             dcc.Markdown(
                 """
                 Este dashboard interactivo presenta un análisis de más de 1.8 millones de registros de precios al consumidor, capturados por la **Oficina de Estudios y Políticas Agrarias (ODEPA)** entre 2020 y 2025. 
@@ -55,7 +55,7 @@ app.layout = html.Div([
                 **¿Cómo usar?**
                 * **Explore:** Utilice los filtros en el panel izquierdo.
                 * **Periodo:** Seleccione un rango de años con la barra deslizante.
-                * **Compare:** Escoja múltiples regiones, canales y productos. Los gráficos se actualizarán automáticamente.
+                * **Compare:** Escoja múltiples regiones, canales y/o productos. Los gráficos se actualizarán automáticamente.
                 """
             )
         ]),
