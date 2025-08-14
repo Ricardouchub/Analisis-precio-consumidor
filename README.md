@@ -20,8 +20,6 @@ El objetivo principal de este proyecto es transformar un gran volumen de datos t
 ---
 ## Procesamiento de Datos y Análisis
 
-Antes del desarrollo del dashboard, se realizó un riguroso proceso de preparación y análisis de los datos.
-
 ### **1. Limpieza y Consolidación de Datos**
 El proceso inicial se centró en unificar y estandarizar los 6 archivos CSV originales:
 * **Consolidación:** Se combinaron todos los archivos en un único DataFrame de más de 1.8 millones de filas.
@@ -47,10 +45,9 @@ Debido al gran tamaño del dataset, el archivo CSV final fue convertido a format
 * **Análisis Comparativo:** Dos gráficos resumen la información de la selección:
     * **Comparativa Regional:** Muestra qué regiones son más caras o baratas en comparación con el promedio nacional.
     * **Distribución por Canal:** Un gráfico de torta revela la proporción de datos registrados en cada punto de monitoreo.
-* **Interfaz Limpia:** Desarrollado con un diseño claro y profesional para una experiencia de usuario amigable.
 
 ---
-## Ejecución Local
+## Como ejecutarlo localmente
 
 Para ejecutar este dashboard en tu propia máquina, sigue estos pasos:
 
@@ -94,5 +91,9 @@ Los datos utilizados en este proyecto son de dominio público y fueron obtenidos
 <img width="894" height="472" alt="image" src="https://github.com/user-attachments/assets/d7f2f0b2-9b99-4c83-b846-720f2b559589" />
 <img width="879" height="586" alt="image" src="https://github.com/user-attachments/assets/87b470a5-17a4-4857-954d-aee753563dea" />
 
+---
+## Autor
 
+**Ricardo Urdaneta** 
 
+[**LinkedIn**](https://www.linkedin.com/in/ricardourdanetacastro)
