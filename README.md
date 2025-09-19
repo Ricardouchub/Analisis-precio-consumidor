@@ -47,40 +47,6 @@ Debido al gran tamaño del dataset, el archivo CSV final fue convertido a format
     * **Distribución por Canal:** Un gráfico de torta revela la proporción de datos registrados en cada punto de monitoreo.
 
 ---
-## Como ejecutarlo localmente
-
-Para ejecutar este dashboard en tu propia máquina, sigue estos pasos:
-
-1.  **Clona el repositorio:**
-    ```bash
-    git clone [https://github.com/Ricardouchub/Analisis-precio-consumidor.git](https://github.com/Ricardouchub/Analisis-precio-consumidor.git)
-    cd Analisis-precio-consumidor
-    ```
-
-2.  **Configura Git LFS:** Este proyecto usa Git LFS para manejar el archivo de datos grande. Asegúrate de tenerlo instalado.
-    ```bash
-    git lfs install
-    git lfs pull
-    ```
-
-3.  **Crea un entorno virtual e instala las dependencias:**
-    ```bash
-    # Crear entorno (opcional pero recomendado)
-    python -m venv venv
-    source venv/bin/activate  # En Windows: venv\Scripts\activate
-
-    # Instalar librerías
-    pip install -r requirements.txt
-    ```
-
-4.  **Ejecuta la aplicación:**
-    ```bash
-    python app.py
-    ```
-
-5.  Abre tu navegador y ve a la dirección `http://127.0.0.1:8050/` para ver el dashboard.
-
----
 ## Fuente de Datos
 
 Los datos utilizados en este proyecto son de dominio público y fueron obtenidos del portal de datos abiertos de la [Oficina de Estudios y Políticas Agrarias (ODEPA)](https://datos.odepa.gob.cl/dataset/precios-consumidor) del Gobierno de Chile.
