@@ -20,7 +20,7 @@ df['anio_mes'] = df['anio'].astype(str) + '-' + df['mes'].astype(str).str.zfill(
 ALL_REGIONS = sorted(df['region'].unique())
 ALL_CANALES = sorted(df['tipo_de_punto_monitoreo'].unique())
 
-# --- Inicialización de la App Dash ---
+# --- Inicialización de la App ---
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.FLATLY, dbc.icons.BOOTSTRAP])
 server = app.server
 
