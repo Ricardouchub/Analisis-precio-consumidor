@@ -35,7 +35,7 @@ Una vez con los datos limpios, se realizaron varios análisis para extraer insig
 * **Estacionalidad:** Se identificaron los productos con mayores variaciones de precio entre el verano y el invierno.
 
 ### **3. Optimización para Despliegue**
-Debido al gran tamaño del dataset, el archivo CSV final fue convertido a formato **Parquet** y se optimizaron los tipos de datos de las columnas de texto a `category`. Esto resultó en una **reducción drástica del consumo de memoria**, lo que fue crucial para poder desplegar la aplicación en un entorno web.
+Debido al gran tamaño del dataset, el archivo CSV final fue convertido a formato **Parquet** y se optimizaron los tipos de datos de las columnas de texto a `category`.
 
 ---
 ## Características del Dashboard
