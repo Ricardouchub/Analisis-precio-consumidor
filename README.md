@@ -34,7 +34,7 @@ Una vez con los datos limpios, se realizaron varios análisis para extraer insig
 * **Análisis de Canales:** Se estudió la diferencia de precios entre supermercados, ferias libres y otros puntos de venta.
 * **Estacionalidad:** Se identificaron los productos con mayores variaciones de precio entre el verano y el invierno.
 
-### **3. Optimización para Despliegue**
+### **3. Optimización de datos para despliegue**
 Debido al gran tamaño del dataset, el archivo CSV final fue convertido a formato **Parquet** y se optimizaron los tipos de datos de las columnas de texto a `category`.
 
 ---
