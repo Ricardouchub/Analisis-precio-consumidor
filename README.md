@@ -34,8 +34,8 @@ Una vez con los datos limpios, se realizaron varios análisis para extraer insig
 * **Análisis de Canales:** Se estudió la diferencia de precios entre supermercados, ferias libres y otros puntos de venta.
 * **Estacionalidad:** Se identificaron los productos con mayores variaciones de precio entre el verano y el invierno.
 
-### **3. Optimización para Despliegue**
-Debido al gran tamaño del dataset, el archivo CSV final fue convertido a formato **Parquet** y se optimizaron los tipos de datos de las columnas de texto a `category`. Esto resultó en una **reducción drástica del consumo de memoria**, lo que fue crucial para poder desplegar la aplicación en un entorno web.
+### **3. Optimización de datos para despliegue**
+Debido al gran tamaño del dataset, el archivo CSV final fue convertido a formato **Parquet** y se optimizaron los tipos de datos de las columnas de texto a `category`.
 
 ---
 ## Características del Dashboard
@@ -45,40 +45,6 @@ Debido al gran tamaño del dataset, el archivo CSV final fue convertido a format
 * **Análisis Comparativo:** Dos gráficos resumen la información de la selección:
     * **Comparativa Regional:** Muestra qué regiones son más caras o baratas en comparación con el promedio nacional.
     * **Distribución por Canal:** Un gráfico de torta revela la proporción de datos registrados en cada punto de monitoreo.
-
----
-## Como ejecutarlo localmente
-
-Para ejecutar este dashboard en tu propia máquina, sigue estos pasos:
-
-1.  **Clona el repositorio:**
-    ```bash
-    git clone [https://github.com/Ricardouchub/Analisis-precio-consumidor.git](https://github.com/Ricardouchub/Analisis-precio-consumidor.git)
-    cd Analisis-precio-consumidor
-    ```
-
-2.  **Configura Git LFS:** Este proyecto usa Git LFS para manejar el archivo de datos grande. Asegúrate de tenerlo instalado.
-    ```bash
-    git lfs install
-    git lfs pull
-    ```
-
-3.  **Crea un entorno virtual e instala las dependencias:**
-    ```bash
-    # Crear entorno (opcional pero recomendado)
-    python -m venv venv
-    source venv/bin/activate  # En Windows: venv\Scripts\activate
-
-    # Instalar librerías
-    pip install -r requirements.txt
-    ```
-
-4.  **Ejecuta la aplicación:**
-    ```bash
-    python app.py
-    ```
-
-5.  Abre tu navegador y ve a la dirección `http://127.0.0.1:8050/` para ver el dashboard.
 
 ---
 ## Fuente de Datos
