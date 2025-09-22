@@ -11,9 +11,7 @@
 
 Este repositorio contiene el código y los datos para un dashboard interactivo que analiza los precios de la canasta básica en Chile. El proyecto utiliza un conjunto de datos públicos de la **Oficina de Estudios y Políticas Agrarias (ODEPA)**, que comprende más de 1.8 millones de registros recopilados entre 2020 y 2025.
 
-<img width="744" height="339" alt="image" src="https://github.com/user-attachments/assets/2ccc3da9-cec2-4208-bfd1-c5a7719d5a5d" />
-
-
+![Screenshot](img/app_screenshot.png)
 
 El objetivo principal de este proyecto es transformar un gran volumen de datos tabulares en una herramienta de visualización intuitiva. El dashboard permite a los usuarios explorar tendencias de precios, comparar costos entre regiones y canales de venta, y descubrir patrones estacionales de los alimentos más importantes para los consumidores en Chile.
 
