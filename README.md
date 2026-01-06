@@ -9,7 +9,10 @@
 </p>
 
 
-Este repositorio contiene el código y los datos para un dashboard interactivo que analiza los precios de la canasta básica en Chile. El proyecto utiliza un conjunto de datos públicos de la **Oficina de Estudios y Políticas Agrarias (ODEPA)**, que comprende más de 1.8 millones de registros recopilados entre 2020 y 2025.
+Este repositorio contiene el código, los datos y los recursos necesarios para construir un dashboard interactivo que analiza la evolución de los precios de la canasta básica en Chile. El proyecto utiliza datos públicos de la Oficina de Estudios y Políticas Agrarias (ODEPA), con más de 1,8 millones de registros recopilados entre 2020 y 2025.
+
+Para revisar el análisis exploratorio y el procesamiento de datos, consulta el **[Notebook](https://github.com/Ricardouchub/Analisis-precio-consumidor/blob/main/Notebook.ipynb)**
+
 
 ![Screenshot](img/app_screenshot.png)
 
